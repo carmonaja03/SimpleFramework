@@ -1,4 +1,7 @@
 # SimpleFramework
+Made this simple framework that is using POM. It has wait utility and yml file resources.
+
+
 
 1. create a folder in your computer
 2. clone this repository
