@@ -1,5 +1,5 @@
 # SimpleFramework
-Made this simple framework that is using POM. It has wait utility and yml file resources. It uses Java, Cucumber, Selenium and Maven.
+Made this simple framework that is using POM. It has wait utility and yml file resources. It uses Java, Cucumber, Selenium, Maven and Cluecumber for reporting.
 
 
 
