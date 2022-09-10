@@ -11,7 +11,7 @@ import java.util.Properties;
 public class PropertyReader {
 
     private static final Logger log = LoggerFactory.getLogger(PropertyReader.class);
-    private static String testEnvironment = System.getProperty("test");
+    private static String testEnvironment = System.getProperty("qa");
     private static Properties props;
 
     public static String getProperty(String prop) {
@@ -28,13 +28,9 @@ public class PropertyReader {
         return systemPropertyValue != null ? systemPropertyValue : props.getProperty(prop);
     }
 
-    private PropertyReader() {
-        throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
-    }
-
     static {
-        testEnvironment = testEnvironment != null ? testEnvironment : "dev";
-        InputStream fileName = PropertyReader.class.getClassLoader().getResourceAsStream("environment/" + testEnvironment + ".yml");
+        testEnvironment = testEnvironment != null ? testEnvironment : "qa";
+        InputStream fileName = PropertyReader.class.getClassLoader().getResourceAsStream("environment/" + testEnvironment + ".properties");
         log.info("Loading " + testEnvironment + " env properties");
 
         try {
@@ -43,6 +39,8 @@ public class PropertyReader {
         } catch (IOException var2) {
             var2.printStackTrace();
         }
-
+    }
+    private PropertyReader() {
+        throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
     }
 }

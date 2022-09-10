@@ -3,7 +3,6 @@ package hooks;
 import io.cucumber.java.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pages.HomePage;
 import utilities.DriverManager;
 
 
@@ -22,7 +21,7 @@ public class Hooks {
 
     @After
     public void afterScenario() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(500);
         DriverManager.destroyDriver();
         logger.debug("Closing all test..");
     }
