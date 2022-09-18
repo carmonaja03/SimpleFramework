@@ -5,7 +5,7 @@ I made this simple test framework that supports Java, Cucumber, Selenium, Maven 
   3. has utilities
   4. has cluecumber reporting
 
-Currently, It supports UI automation using selenium webdriver. API will be added in the future(still looking for opensource sites). Will also update this framework from time to time.
+Currently, It supports UI automation using selenium webdriver. API will be added in the future. Will also update this framework from time to time.
 
 
 1. create a folder in your laptop/PC
