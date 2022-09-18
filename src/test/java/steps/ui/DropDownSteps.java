@@ -9,7 +9,7 @@ import utilities.PropertyReader;
 public class DropDownSteps {
 
     private final DropDownPage dropDownPage;
-    private static final String URL = PropertyReader.getProperty("googleSite");
+    private static final String URL = PropertyReader.getProperty("letCodeDropDown");
 
     public DropDownSteps() {
         dropDownPage = PageObjectManager.getDropDownPage();

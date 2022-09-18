@@ -3,8 +3,7 @@ package pages;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import pageobject.PageObjectManager;
 import utilities.PropertyReader;
 import utilities.WaitUtils;
 
@@ -12,7 +11,6 @@ import utilities.WaitUtils;
 public class DropDownPage extends BasePage{
     WaitUtils waitUtils;
 
-    private final Logger logger = LoggerFactory.getLogger(DropDownPage.class);
     private static final String URL = PropertyReader.getProperty("letCodeDropDown");
 
     //** Elements
@@ -22,7 +20,7 @@ public class DropDownPage extends BasePage{
     public DropDownPage(WebDriver driver) {
         super(driver);
         setURL(URL);
-        logger.debug("loading page..");
+        waitUtils = PageObjectManager.getWaitUtils();
     }
 
     //** Methods

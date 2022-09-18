@@ -5,7 +5,6 @@ import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import pageobject.PageObjectManager;
 import pages.AdvancedTablePage;
-import pages.DropDownPage;
 import utilities.PropertyReader;
 
 public class AdvancedTableSteps {

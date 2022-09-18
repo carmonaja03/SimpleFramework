@@ -10,7 +10,7 @@ import utilities.PropertyReader;
 public class EditSteps {
 
     private final EditPage editPage;
-    private static final String URL = PropertyReader.getProperty("googleSite");
+    private static final String URL = PropertyReader.getProperty("letCodeEdit");
 
     public EditSteps() {
         editPage = PageObjectManager.getEditPage();

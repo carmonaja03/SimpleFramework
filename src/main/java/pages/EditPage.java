@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import pageobject.PageObjectManager;
 import utilities.PropertyReader;
 import utilities.WaitUtils;
 
@@ -25,6 +26,7 @@ public class EditPage extends BasePage {
     public EditPage(WebDriver driver) {
         super(driver);
         setURL(URL);
+        waitUtils = PageObjectManager.getWaitUtils();
     }
 
     //** Methods

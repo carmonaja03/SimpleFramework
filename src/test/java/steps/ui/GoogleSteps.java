@@ -2,10 +2,8 @@ package steps.ui;
 
 import DataModels.DataFactory;
 import DataModels.PersonalData;
-import hooks.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import org.openqa.selenium.WebDriver;
 import pageobject.PageObjectManager;
 import pages.GooglePage;
 import utilities.PropertyReader;

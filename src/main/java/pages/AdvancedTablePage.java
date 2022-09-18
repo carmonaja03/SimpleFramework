@@ -3,16 +3,16 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import pageobject.PageObjectManager;
 import utilities.PropertyReader;
+import utilities.WaitUtils;
 
 import java.util.List;
 
 
 public class AdvancedTablePage extends BasePage{
     WebDriver driver;
-    private final Logger log = LoggerFactory.getLogger(AdvancedTablePage.class);
+    WaitUtils waitUtils;
     private static final String URL = PropertyReader.getProperty("letCodeAdvancedTable");
 
     //** Elements
@@ -23,7 +23,7 @@ public class AdvancedTablePage extends BasePage{
     public AdvancedTablePage(WebDriver driver) {
         super(driver);
         setURL(URL);
-        log.debug("loading page..");
+        waitUtils = PageObjectManager.getWaitUtils();
     }
 
     //** Methods
@@ -36,7 +36,6 @@ public class AdvancedTablePage extends BasePage{
         List<WebElement> results = driver.findElements(searchResults);
         for (WebElement result : results) {
             if (result.getText().contains(searchText)) {
-                log.info("Found the ff: " + result.getText());
                 resultFound = true;
             }
         }

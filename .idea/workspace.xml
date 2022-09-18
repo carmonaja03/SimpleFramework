@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8ce99e44-0d58-4247-9124-40b07a8740e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdvancedTablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdvancedTablePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DropDownPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DropDownPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EditPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/UploadDownloadPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/UploadDownloadPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/DropDownSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/DropDownSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/EditSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/EditSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -15,7 +15,7 @@ Feature: Simple test
     @sampleTest3
     Scenario: This scenario is to select dropdown
       Given user goes to letCode dropdown page
-      And user selects "blockchain" programming language
+      And user selects "java" programming language
 
   @sampleTest4
   Scenario: This scenario is to search and find university name
