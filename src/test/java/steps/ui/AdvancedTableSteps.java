@@ -9,7 +9,7 @@ import utilities.PropertyReader;
 
 public class AdvancedTableSteps {
     private final AdvancedTablePage advancedTablePage;
-    private static final String URL = PropertyReader.getProperty("googleSite");
+    private static final String URL = PropertyReader.getProperty("letCodeAdvancedTable");
 
     public AdvancedTableSteps() {
         advancedTablePage = PageObjectManager.getAdvanceTablePage();
