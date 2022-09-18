@@ -1,5 +1,5 @@
 # SimpleFramework
-I made this simple test framework that supports Java, Cucumber, Selenium, Maven and mimics large scale framework used by most tech comapanies. Test design is a combination of Page Object Model and Factory. It has all the component needed for a scalable test automation framework 
+I made this simple test automation framework that supports Java, Cucumber, Selenium, Maven and mimics large scale framework used by most tech comapanies. Test design is a combination of Page Object Model and Factory. It has all the component needed for a scalable test automation framework 
   1. .properties file 
   2. .yml and .ini file for testdata 
   3. has utilities
