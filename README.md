@@ -19,3 +19,4 @@ Currently, It supports UI automation using selenium webdriver. API will be added
 
 Note:
 The website used on this framework is opensource. you can use other website
+
