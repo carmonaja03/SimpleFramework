@@ -2,23 +2,31 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.openqa.selenium.WebDriver;
+import pageobject.PageObjectManager;
 import utilities.PropertyReader;
 import utilities.WaitUtils;
 
 public class GooglePage extends BasePage{
-    private final Logger log = LoggerFactory.getLogger(GooglePage.class);
+    WaitUtils waitUtils;
     private static final String URL = PropertyReader.getProperty("googleSite");
+
+    //** Elements
     By searchBar = By.cssSelector("input[name='q']");
 
-    public GooglePage() {
+    //** Constructor
+    public GooglePage(WebDriver driver) {
+        super(driver);
         setURL(URL);
-        log.info("loading page..");
+        waitUtils = PageObjectManager.getWaitUtils();
     }
 
+    //** Methods
     public void inputSearchBar(String searchItem){
         waitUtils.findElement(searchBar).sendKeys(searchItem + Keys.ENTER);
     }
 
+    public void inputInSearchBar(String firstName) {
+        waitUtils.findElement(searchBar).sendKeys(firstName + Keys.ENTER);
+    }
 }

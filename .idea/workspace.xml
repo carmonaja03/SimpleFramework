@@ -5,57 +5,99 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ce99e44-0d58-4247-9124-40b07a8740e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_ci_environment_9_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_gherkin_24_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ini4j_ini4j_0_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AdvancedTablePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DropDownPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/GooglePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/UploadDownloadPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/TestDataReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/AdvancedTableSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/DropDownSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/GoogleSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/UploadDownloadSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data/testdata.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/environment/qa.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ui/Google.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ui/UploadDownload.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_create_meta_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_core_6_10_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_core_7_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_expressions_10_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_expressions_16_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_gherkin_6_10_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_gherkin_7_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_gherkin_messages_6_10_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_gherkin_messages_7_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java_6_10_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_java_7_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_junit_6_10_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_junit_7_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_plugin_6_10_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_cucumber_plugin_7_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_datatable_3_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_datatable_7_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_docstring_6_10_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_docstring_7_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_html_formatter_13_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_html_formatter_20_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_messages_15_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_messages_19_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_tag_expressions_3_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_cucumber_tag_expressions_4_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs 2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataModels/DataFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataModels/PersonalData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/SystemDataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36 2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_21 2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFramework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/PageObjectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdvancedTablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AdvancedTablePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DropDownPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DropDownPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/EditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EditPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/GooglePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GooglePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/UploadDownloadPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/UploadDownloadPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/PropertyReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/TestDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/TestDataReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/WaitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/WaitUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hooks/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/EditSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/EditSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/HomeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/environment/dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/environment/dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/ui/Input.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ui/Input.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AdvancedTableSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/AdvancedTableSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/DropDownSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/DropDownSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/EditSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/EditSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/GoogleSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/GoogleSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/HomeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/UploadDownloadSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/UploadDownloadSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/environment/dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/environment/personal_info_data.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/ui/Google.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ui/Google.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleFramework-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobject/PageObjectManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobject/PageObjectManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/AdvancedTablePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/AdvancedTablePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/DropDownPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DropDownPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/EditPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/EditPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/GooglePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/GooglePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/UploadDownloadPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/UploadDownloadPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/DriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/DriverManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/TestDataReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/TestDataReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/WaitUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/WaitUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/css/cluecumber-additional.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/css/cluecumber-custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/css/cluecumber.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/css/dataTables.bootstrap4.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/css/datatables.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/css/jquery.fancybox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/font/cluecumber.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/font/cluecumber.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/font/cluecumber.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/font/cluecumber.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/font/cluecumber.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/js/Chart.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/js/datatables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/js/jquery.fancybox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/feature-scenarios/feature_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/feature-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/scenario-detail/scenario_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/scenario-detail/scenario_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/scenario-sequence.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/scenario-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/step-scenarios/step_2069734739.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/step-scenarios/step_254863757.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/step-scenarios/step_2648633.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/step-scenarios/step_389140210.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/step-scenarios/step_857518172.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/step-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/tag-scenarios/tag_sampleTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/tag-scenarios/tag_sampleTest1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/tag-scenarios/tag_sampleTest2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-report/pages/tag-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.RunTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/runner.RunTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/environment/dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/RunTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/RunTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/AdvancedTableSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/DropDownSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/EditSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/GoogleSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/HomeSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/UploadDownloadSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ui/Google.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ui/Google.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +114,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -82,6 +128,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a88c723d-bf2d-4b39-994d-3d9ef4949c6f" />
+        <option name="url" value="git@github.com:carmonaja03/SimpleFramework.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -93,13 +147,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.side.proportion" value="0.51079136" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -108,6 +166,7 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pageobject" />
       <recent name="" />
     </key>
   </component>
@@ -148,7 +207,55 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/hooks/Hooks.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pageobject/PageObjectManager.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pageobject/PageObjectManager.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/DriverManager.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.io.BufferedInputStream" memberName="buf" />

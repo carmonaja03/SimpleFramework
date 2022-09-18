@@ -3,40 +3,38 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import utilities.PropertyReader;
 import utilities.WaitUtils;
 
 
 public class EditPage extends BasePage {
-    private final Logger logger = LoggerFactory.getLogger(EditPage.class);
 
+    WaitUtils waitUtils;
+
+    //** Elements
     By fullNameTextBox = By.xpath("//input[@id='fullName']");
     By appendATextTextBox = By.xpath("//input[@id='join']");
     By disabledTextBox = By.xpath("//input[@id='noEdit' and @class='input']");
     By popUpAd = By.cssSelector("g[class='down']");
 
-
-    private final WaitUtils waitUtils = new WaitUtils();
-
     private static final String URL = PropertyReader.getProperty("letCodeEdit");
 
-    public EditPage() {
+    //** Constructor
+    public EditPage(WebDriver driver) {
+        super(driver);
         setURL(URL);
-        logger.debug("loading page..");
     }
 
+    //** Methods
     public void enterFullName(String name){
         waitUtils.findElement(fullNameTextBox).sendKeys(name);
-        logger.debug("enterFullName()..");
     }
 
     public void enterAppendAText(String enterText) {
         waitUtils.findElement(appendATextTextBox).clear();
         waitUtils.findElement(appendATextTextBox).sendKeys(enterText);
-        logger.debug("enterAppendAText()..");
 
     }
 

@@ -11,26 +11,23 @@ import java.time.Duration;
 
 
 public class WaitUtils {
-    private final Logger logger = LoggerFactory.getLogger(WaitUtils.class);
     private static final long Medium = 15L;
-    private final WebDriver driver;
 
-    public WaitUtils() {
-        this.driver = DriverManager.getDriver();
+    public WaitUtils(WebDriver driver) {
+        DriverManager.driver = driver;
     }
 
     public WebElement findElement(By element, Duration timeout){
-            try {
-                WebDriverWait wait = new WebDriverWait(driver, timeout);
-                logger.info("waiting for element..");
-                return wait.until(ExpectedConditions.elementToBeClickable(element));
-            } catch (TimeoutException | StaleElementReferenceException e) {
-                String message = "Locator " + element + " not clickable after " + timeout + " seconds. " + e.getMessage();
-                return null;
-            }
+        try {
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), timeout);
+            return wait.until(ExpectedConditions.elementToBeClickable(element));
+        } catch (TimeoutException | StaleElementReferenceException e) {
+            String message = "Locator " + element + " not clickable after " + timeout + " seconds. " + e.getMessage();
+            return null;
+        }
     }
 
-     public WebElement findElement(By element){
+    public WebElement findElement(By element){
         return findElement(element, Duration.ofSeconds(Medium));
     }
 }

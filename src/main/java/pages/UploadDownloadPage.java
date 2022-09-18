@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utilities.PropertyReader;
@@ -11,20 +12,19 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 public class UploadDownloadPage extends BasePage{
-    private final Logger logger = LoggerFactory.getLogger(EditPage.class);
-    private final WaitUtils waitUtils = new WaitUtils();
+     WaitUtils waitUtils;
     private static final String URL = PropertyReader.getProperty("letCodeFile");
 
-    /**Elements
-     *
-     */
+    // ** Elements
     private By uploadFileButton = By.cssSelector("svg[data-icon='upload']>path");
 
-
-    public UploadDownloadPage() {
+    // ** Constructor
+    public UploadDownloadPage(WebDriver driver) {
+        super(driver);
         setURL(URL);
-        logger.debug("loading page..");
     }
+
+    // ** Methods
     public void uploadFile() throws AWTException {
         waitUtils.findElement(uploadFileButton).click();
         Robot rb = new Robot();

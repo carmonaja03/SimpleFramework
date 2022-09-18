@@ -1,22 +1,27 @@
 package utilities;
 
+import lombok.experimental.UtilityClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+@UtilityClass
+    public class DriverManager {
 
-public class DriverManager {
-    private static WebDriver driver;
+     WebDriver driver = null;
     private static final String browser = getCurrentBrowser();
 
-    public static void initializeDriver() {
+
+
+    public void initializeDriver() {
         if (driver == null) {
             setBrowserDriver(browser);
+           // setDriver(driver);
             driver.manage().timeouts();
             driver.manage().window().maximize();
         }
-
     }
+
     private static String getCurrentBrowser() {
         String _browser = PropertyReader.getProperty("browser");
         if (_browser == null) {
@@ -26,39 +31,34 @@ public class DriverManager {
         return _browser;
     }
 
-    public static WebDriver getDriver() {
+    public WebDriver getDriver() {
        return driver;
     }
 
-    public static void setBrowserDriver(String browser) {
+    public  void setBrowserDriver(String browser) {
 
         switch (browser){
             case "chrome":
-               driver = new ChromeDriver();
-              break;
+                driver = new ChromeDriver();
+                break;
             case "firefox":
-              driver = new FirefoxDriver();
-              break;
+                driver = new FirefoxDriver();
+                break;
             default:
                 throw new IllegalArgumentException("Invalid browser: "+browser);
         }
 
     }
 
-    public static WebDriver setChromeDriver(){
-        driver = new ChromeDriver();
-        return driver;
+    public void setDriver(WebDriver driver){
+        DriverManager.driver = driver;
     }
 
-    public static void destroyDriver() {
+    public void destroyDriver() {
         if (driver != null) {
             driver.quit();
             driver = null;
         }
-
     }
 
-    private DriverManager() {
-        throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
-    }
 }
