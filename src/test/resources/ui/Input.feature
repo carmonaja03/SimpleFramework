@@ -8,7 +8,7 @@ Feature: Simple test
   @sampleTest2
     Scenario: This scenario is just to enter full name in Edit Page
       Given user goes to letCode edit page
-      And user enters full name "Denise Carmona"
+      And user enters full name "John Doe"
       And user enters "how are you?" on append a text
       And user confirms that the field is disabled
 
