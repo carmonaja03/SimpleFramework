@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ce99e44-0d58-4247-9124-40b07a8740e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/RunAllTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/RunGoogleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunYoutubeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/ui/Google.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ui/Google.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,17 +76,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/resources/data" />
       <recent name="$PROJECT_DIR$/src/test/resources/ui" />
-      <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pageobject" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="RunTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestSuite">
+    <configuration name="RunYoutubeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SimpleFramework" />
       <extension name="coverage">
         <pattern>
@@ -88,16 +95,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.RunTests" />
+      <option name="MAIN_CLASS_NAME" value="runner.RunYoutubeTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSuite" type="TestNG">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.RunYoutubeTests" />
+      <item itemvalue="TestNG.TestSuite" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RunTests" />
+        <item itemvalue="JUnit.RunYoutubeTests" />
       </list>
     </recent_temporary>
   </component>
@@ -140,15 +172,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utilities/DriverManager.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.io.BufferedInputStream" memberName="buf" />

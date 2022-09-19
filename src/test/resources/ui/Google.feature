@@ -1,4 +1,4 @@
-@googleTest1
+@googleTest
 Feature: Simple test
 
   Scenario: Input in Google Search bar using ini file

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = {"steps","hooks"},
         monochrome = true,
         features = "src/test/resources/",
-        tags = ("@youtubeTest")
+        tags = ("@googleTest")
 )
-public class RunTests {
+public class RunGoogleTest {
 }
