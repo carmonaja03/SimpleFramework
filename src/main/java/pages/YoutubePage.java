@@ -33,10 +33,16 @@ public class YoutubePage extends BasePage{
         waitUtils.findElementClickable(searchBar).sendKeys(Keys.ENTER);
     }
 
-    public void validateSearchResult(String searchResult) {
+    public void clickAndPlaySearchResult(String searchResult) {
         By result = By.xpath("//a[@id='video-title']//yt-formatted-string[contains(normalize-space(),'"+searchResult+"')]");
+        By ads = By.cssSelector("div[class='ytp-ad-text ytp-ad-skip-button-text']");
+
         waitUtils.findElementClickable(result).isDisplayed();
         waitUtils.findElementClickable(result).click();
+
+        if (waitUtils.findElementClickable(ads) != null){
+            waitUtils.findElementClickable(ads).click();
+        }
     }
 
 
@@ -47,7 +53,7 @@ public class YoutubePage extends BasePage{
         if (waitUtils.findElementClickable(ads) != null){
             waitUtils.findElementClickable(ads).click();
         }
-       // waitUtils.findElementClickable(playButton).click();
+        waitUtils.findElementClickable(playButton).click();
     }
 
     public void listenToMusic(int minutes) throws InterruptedException {

@@ -31,9 +31,9 @@ public class YoutubeSteps {
         youtubePage.searchMusic(searchString);
     }
 
-    @And("^user validates and clicks \"(.*)\" on the search result$")
-    public void userValidatesAndClicksOnTheSearchResult(String searchResult) {
-        youtubePage.validateSearchResult(searchResult);
+    @And("^user clicks and plays \"(.*)\" on the search result$")
+    public void userClicksAndPlaysOnTheSearchResult(String searchResult) {
+        youtubePage.clickAndPlaySearchResult(searchResult);
     }
 
     @Then("^user clicks play button$")

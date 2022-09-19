@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ce99e44-0d58-4247-9124-40b07a8740e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/YoutubePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/ui/YoutubeSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ui/Youtube.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/PageObjectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AdvancedTablePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DropDownPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EditPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/GooglePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GooglePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/WaitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/WaitUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/AdvancedTableSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/DropDownSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/EditSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/GoogleSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/GoogleSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/HomeSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/environment/qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/environment/qa.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/ui/Input.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/YoutubePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/YoutubePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/YoutubeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/YoutubeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/ui/Youtube.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ui/Youtube.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
