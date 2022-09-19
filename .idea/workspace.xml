@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ce99e44-0d58-4247-9124-40b07a8740e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/RunAllTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/RunGoogleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/TestSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data/personal_info.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunYoutubeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/SystemDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/SystemDataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/GoogleSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/GoogleSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/data/testdata.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data/testdata.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/environment/personal_info_data.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/ui/Google.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ui/Google.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +75,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/resources/data" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/resources/ui" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -85,7 +84,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestSuite">
+  <component name="RunManager" selected="JUnit.RunGoogleTest">
+    <configuration name="RunGoogleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SimpleFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.RunGoogleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunYoutubeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SimpleFramework" />
       <extension name="coverage">
@@ -126,9 +140,11 @@
     <list>
       <item itemvalue="JUnit.RunYoutubeTests" />
       <item itemvalue="TestNG.TestSuite" />
+      <item itemvalue="JUnit.RunGoogleTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RunGoogleTest" />
         <item itemvalue="JUnit.RunYoutubeTests" />
       </list>
     </recent_temporary>

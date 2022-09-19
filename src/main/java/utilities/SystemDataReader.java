@@ -11,7 +11,7 @@ public class SystemDataReader {
     public PersonalData loadPersonalData(String location) {
         try {
             Yaml yaml = new Yaml(new Constructor(PersonalData.class));
-            InputStream inputStream = yaml.getClass().getClassLoader().getResourceAsStream("environment/"+location+".yml");
+            InputStream inputStream = yaml.getClass().getClassLoader().getResourceAsStream("data/"+location+".yml");
             return yaml.load(inputStream);
         } catch (Exception e){
             System.out.println("file not found");

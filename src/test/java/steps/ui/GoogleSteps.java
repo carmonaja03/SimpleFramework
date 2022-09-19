@@ -34,7 +34,7 @@ public class GoogleSteps {
        googlePage.inputSearchBar(enterSearch);
     }
 
-    @And("^user inputs \"(.*)\" in the searchbar$")
+    @And("^user inputs first name \"(.*)\" in the searchbar$")
     public void userInputsInTheSearchbar(String info) {
         personalInfo = dataFactory.createPersonalData(info);
         googlePage.inputInSearchBar(personalInfo.getFirstName());
