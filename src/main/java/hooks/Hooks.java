@@ -23,12 +23,12 @@ public class Hooks {
 
     @After
     public void tearDown() {
-        try {
-            DriverManager.destroyDriver();
-        } catch (Exception e)
-        {
-            e.printStackTrace();
-        }
+//        try {
+//            DriverManager.destroyDriver();
+//        } catch (Exception e)
+//        {
+//            e.printStackTrace();
+//        }
     }
 
 

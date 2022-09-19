@@ -17,7 +17,6 @@ public class GoogleSteps {
     private final DataFactory dataFactory = new DataFactory();
     PersonalData personalInfo = new PersonalData();
 
-    private static final String URL = PropertyReader.getProperty("googleSite");
 
     public GoogleSteps() {
         googlePage = PageObjectManager.getGooglePage();
@@ -26,7 +25,7 @@ public class GoogleSteps {
 
     @Given("^user goes to google website$")
     public void userGoesToWebsite() {
-        googlePage.setURL(URL);
+        googlePage.goToGoogle();
     }
 
     @And("^user \"(.*)\" inputs \"(.*)\" in the searchbar$")

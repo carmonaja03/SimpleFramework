@@ -9,7 +9,6 @@ import utilities.WaitUtils;
 public class BasePage {
     private WebDriver driver = null;
     WaitUtils waitUtils;
-    String url = "";
 
     public BasePage(WebDriver driver) {
     setDriver(driver);
@@ -20,9 +19,6 @@ public class BasePage {
        DriverManager.getDriver().get(url);
     }
 
-    public void getUrl() {
-        driver.get(url);
-    }
 
     public WebDriver getDriver() {
         return driver;

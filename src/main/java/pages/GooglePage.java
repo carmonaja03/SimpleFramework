@@ -17,16 +17,20 @@ public class GooglePage extends BasePage{
     //** Constructor
     public GooglePage(WebDriver driver) {
         super(driver);
-        setURL(URL);
         waitUtils = PageObjectManager.getWaitUtils();
+    }
+
+    public void goToGoogle() {
+        setURL(URL);
     }
 
     //** Methods
     public void inputSearchBar(String searchItem){
-        waitUtils.findElement(searchBar).sendKeys(searchItem + Keys.ENTER);
+        waitUtils.findElementClickable(searchBar).sendKeys(searchItem + Keys.ENTER);
     }
 
     public void inputInSearchBar(String firstName) {
-        waitUtils.findElement(searchBar).sendKeys(firstName + Keys.ENTER);
+        waitUtils.findElementClickable(searchBar).sendKeys(firstName + Keys.ENTER);
     }
+
 }

@@ -4,8 +4,6 @@ package utilities;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
@@ -17,7 +15,7 @@ public class WaitUtils {
         DriverManager.driver = driver;
     }
 
-    public WebElement findElement(By element, Duration timeout){
+    public WebElement findElementClickable(By element, Duration timeout){
         try {
             WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), timeout);
             return wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -27,7 +25,7 @@ public class WaitUtils {
         }
     }
 
-    public WebElement findElement(By element){
-        return findElement(element, Duration.ofSeconds(Medium));
+    public WebElement findElementClickable(By element){
+        return findElementClickable(element, Duration.ofSeconds(Medium));
     }
 }
