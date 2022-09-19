@@ -5,4 +5,5 @@ Feature: Simple test
     Given user goes to youtube website
     And user searches "best part daniel caesar" in the youtube search
     And user clicks and plays "Daniel Caesar & H.E.R. - Best Part, a Visual" on the search result
-    And user listens to music for "4" minutes
+    #And user listens to music for "4" minutes
+    Then user validates that video is playing

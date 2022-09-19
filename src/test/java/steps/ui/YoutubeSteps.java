@@ -42,7 +42,12 @@ public class YoutubeSteps {
     }
 
     @And("^user listens to music for \"(.*)\" minutes$")
-    public void userListensToMusicTillTheLastPart(int minutes) throws InterruptedException {
+    public void userListensToMusicTillTheLastPart(int minutes) {
         youtubePage.listenToMusic(minutes);
+    }
+
+    @Then("^user validates that video is playing$")
+    public void userValidatesThatVideoIsPlaying() {
+        youtubePage.validateVideoIsPlaying();
     }
 }

@@ -16,7 +16,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
     public void initializeDriver() {
         if (driver == null) {
             setBrowserDriver(browser);
-           // setDriver(driver);
             driver.manage().timeouts();
             driver.manage().window().maximize();
         }
