@@ -14,9 +14,8 @@ Currently, It supports UI automation using selenium webdriver. API will be added
 4. install java in your laptop/PC 
 5. download cucumber for java, gherkin, and ini in intellij marketplace
 6. download selenium webdriver(version should match your chrome version) and place it on /drivers folder
-7. start automating! Try running the Google.feature file :)
+7. start automating! Try running the Youtube.feature file :)
 
 
-Note:
-The website used on this framework is opensource. you can use other website
+
 
