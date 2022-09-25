@@ -1,15 +1,20 @@
 package pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import pageobject.PageObjectManager;
+import utilities.DriverManager;
 import utilities.PropertyReader;
 import utilities.WaitUtils;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
-public class YoutubePage extends BasePage{
+public class YoutubePage extends BasePage {
     WaitUtils waitUtils;
     private static final String URL = PropertyReader.getProperty("youtubeSite");
 
@@ -18,6 +23,7 @@ public class YoutubePage extends BasePage{
     By searchBar = By.cssSelector("input[id='search']");
     By playButton = By.cssSelector("button[class='ytp-play-button ytp-button'][title='Play (k)']");
     By pauseButton = By.cssSelector("button[class='ytp-play-button ytp-button'][title='Pause (k)']");
+    By youtubeChannels = By.cssSelector("div[class='style-scope ytd-channel-name']>yt-formatted-string>a");
 
     //** Constructor
     public YoutubePage(WebDriver driver) {
@@ -37,13 +43,13 @@ public class YoutubePage extends BasePage{
     }
 
     public void clickAndPlaySearchResult(String searchResult) {
-        By result = By.xpath("//a[@id='video-title']//yt-formatted-string[contains(normalize-space(),'"+searchResult+"')]");
+        By result = By.xpath("//a[@id='video-title']//yt-formatted-string[contains(normalize-space(),'" + searchResult + "')]");
         By ads = By.cssSelector("div[class='ytp-ad-text ytp-ad-skip-button-text']");
 
         waitUtils.findElementClickable(result).isDisplayed();
         waitUtils.findElementClickable(result).click();
 
-        if (waitUtils.findElementClickable(ads) != null){
+        if (waitUtils.findElementClickable(ads) != null) {
             waitUtils.findElementClickable(ads).click();
         }
     }
@@ -53,7 +59,7 @@ public class YoutubePage extends BasePage{
         By ads = By.cssSelector("div[class='ytp-ad-text ytp-ad-skip-button-text']");
         playButton = By.cssSelector("button[class='ytp-play-button ytp-button']");
 
-        if (waitUtils.findElementClickable(ads) != null){
+        if (waitUtils.findElementClickable(ads) != null) {
             waitUtils.findElementClickable(ads).click();
         }
         waitUtils.findElementClickable(playButton).click();
@@ -61,7 +67,7 @@ public class YoutubePage extends BasePage{
 
     public void listenToMusic(int minutes) {
         By playTillEnd = By.cssSelector("div[class='ytp-scrubber-container'][style='transform: translateX(1394px);']");
-        int listenInSeconds = minutes/60000;
+        int listenInSeconds = minutes / 60000;
         waitUtils.waitElementToBeVisible(playTillEnd, Duration.ofSeconds(listenInSeconds)).isDisplayed();
     }
 
@@ -69,4 +75,28 @@ public class YoutubePage extends BasePage{
         waitUtils.findElementClickable(pauseButton).isDisplayed();
 
     }
+
+    public void clickAndValidatesChannelName(String channelName) {
+        By youtubeChannelName = By.xpath("//div[@id='channel-header']//div[@class='style-scope ytd-channel-name']//yt-formatted-string[contains(normalize-space(),'"+channelName+"')]");
+        ArrayList<String> channelNames = new ArrayList<>();
+        List<WebElement> channels = DriverManager.getDriver().findElements(youtubeChannels);
+        waitUtils.findElementClickable(youtubeLogo).isDisplayed();
+
+        for (WebElement channel : channels) {
+            channelNames.add(channel.getText());
+            if (channel.getText().equalsIgnoreCase(channelName)) {
+                    waitUtils.findElementClickable(channel).click();
+                    break;
+            }
+        }
+
+        System.out.println("Channel names: "+channelNames);
+        try {
+            waitUtils.findElementClickable(youtubeChannelName).isDisplayed();
+        } catch (Exception e){
+            System.out.println("No channel found");
+        }
+    }
+
+
 }

@@ -50,4 +50,11 @@ public class YoutubeSteps {
     public void userValidatesThatVideoIsPlaying() {
         youtubePage.validateVideoIsPlaying();
     }
+
+
+    @Then("^user clicks and validates any \"(.*)\" channel if it is displayed$")
+    public void userClicksAndValidatesChannel(String channelName) {
+        youtubePage.clickAndValidatesChannelName(channelName);
+    }
+
 }

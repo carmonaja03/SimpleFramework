@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite thread-count="1" verbose="1" name="Simple Framework" annotations="JDK" parallel="methods">
+    <test name="test1" >
+        <classes>
+            <class name="runner.RunYoutubeTest" />
+        </classes>
+    </test>
+
+</suite>

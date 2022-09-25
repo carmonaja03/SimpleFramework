@@ -24,15 +24,27 @@ public class WaitUtils {
             return null;
         }
     }
+    public WebElement findElementClickable(WebElement element, Duration timeout){
+        try {
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), timeout);
+            return wait.until(ExpectedConditions.elementToBeClickable(element));
+        } catch (TimeoutException | StaleElementReferenceException e) {
+            String message = "Locator " + element + " not clickable after " + timeout + " seconds. " + e.getMessage();
+            return null;
+        }
+    }
 
     public WebElement findElementClickable(By element){
+        return findElementClickable(element, Duration.ofSeconds(Medium));
+    }
+    public WebElement findElementClickable(WebElement element){
         return findElementClickable(element, Duration.ofSeconds(Medium));
     }
 
     public WebElement waitElementToBeVisible(By element, Duration timeout){
         try {
             WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), timeout);
-            return wait.until(ExpectedConditions.presenceOfElementLocated(element));
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
         } catch (TimeoutException | StaleElementReferenceException e) {
             String message = "Locator " + element + " not visible after " + timeout + " seconds. " + e.getMessage();
             return null;
@@ -47,4 +59,5 @@ public class WaitUtils {
         WebElement element = DriverManager.getDriver().findElement(locator);
         clickJS(element);
     }
+
 }
