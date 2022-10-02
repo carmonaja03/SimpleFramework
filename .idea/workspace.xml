@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ce99e44-0d58-4247-9124-40b07a8740e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_81.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_78.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36 2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleFramework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/YoutubePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/YoutubePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/WaitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/WaitUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/ui/YoutubeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ui/YoutubeSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/ui/Youtube.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ui/Youtube.feature" afterDir="false" />
     </list>
@@ -75,7 +66,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.22615385" />
     <property name="project.structure.side.proportion" value="0.51079136" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
@@ -91,7 +82,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Click a channel if it is displayed">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User clicks side menu">
     <configuration name="Feature: Youtube" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/ui/Youtube.feature" />
@@ -171,17 +162,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunGoogleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User clicks side menu" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/ui/Youtube.feature" />
+      <option name="GLUE" value="steps.ui hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SimpleFramework" />
+      <option name="NAME_FILTER" value="^User clicks side menu$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User clicks side menu$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User clicks side menu" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.RunGoogleTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,18 +206,18 @@
     <list>
       <item itemvalue="Cucumber Java.Scenario: Search and play music in youtube" />
       <item itemvalue="Cucumber Java.Feature: Youtube" />
-      <item itemvalue="JUnit.RunGoogleTest" />
       <item itemvalue="TestNG.TestSuite" />
       <item itemvalue="Cucumber Java.Scenario: Count number of videos in youtube" />
       <item itemvalue="Cucumber Java.Scenario: Click a channel if it is displayed" />
+      <item itemvalue="Cucumber Java.Scenario: User clicks side menu" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: User clicks side menu" />
         <item itemvalue="Cucumber Java.Scenario: Click a channel if it is displayed" />
         <item itemvalue="Cucumber Java.Scenario: Count number of videos in youtube" />
         <item itemvalue="Cucumber Java.Feature: Youtube" />
         <item itemvalue="Cucumber Java.Scenario: Search and play music in youtube" />
-        <item itemvalue="JUnit.RunGoogleTest" />
       </list>
     </recent_temporary>
   </component>

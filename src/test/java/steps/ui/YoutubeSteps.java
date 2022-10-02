@@ -57,4 +57,18 @@ public class YoutubeSteps {
         youtubePage.clickAndValidatesChannelName(channelName);
     }
 
+    @And("^user clicks \"(.*)\" side menu$")
+    public void userClicksSideMenu(String sideMenu) {
+        youtubePage.clickSideMenu(sideMenu);
+    }
+
+    @And("^user clicks \"(.*)\" explore section$")
+    public void userClicksExploreSection(String section) {
+        youtubePage.clickExploreSection(section);
+    }
+
+    @Then("^user validates that \"(.*)\" channel is displayed$")
+    public void userValidatesThatChannelIsDisplayed(String channel) {
+        youtubePage.validateChannelIsDisplayed(channel);
+    }
 }

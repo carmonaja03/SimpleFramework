@@ -98,5 +98,27 @@ public class YoutubePage extends BasePage {
         }
     }
 
+    /**
+     * @param sideMenu
+     */
+    public void clickSideMenu(String sideMenu) {
+        By sideMenuButton = By.xpath("//tp-yt-paper-item[@class='style-scope ytd-guide-entry-renderer']//yt-formatted-string[contains(text(),'"+sideMenu+"')]");
+        waitUtils.findElementClickable(sideMenuButton).click();
+    }
 
+    /**
+     * @param section
+     */
+    public void clickExploreSection(String section) {
+        By exploreSectionButton = By.xpath("//div[@id='destination-buttons']//yt-formatted-string[contains(text(), '"+section+"')]");
+        waitUtils.findElementClickable(exploreSectionButton).click();
+    }
+
+    /**
+     * @param channel
+     */
+    public void validateChannelIsDisplayed(String channel) {
+        By channelHeader = By.xpath("//h1//yt-formatted-string[@id='title' and contains(text(),'"+channel+"')]");
+        Assert.assertTrue(waitUtils.findElementClickable(channelHeader).isDisplayed());
+    }
 }
