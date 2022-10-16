@@ -1,6 +1,7 @@
 package utilities;
 
 
+import io.cucumber.java.sl.In;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -58,6 +59,9 @@ public class WaitUtils {
     public void clickJS(By locator) {
         WebElement element = DriverManager.getDriver().findElement(locator);
         clickJS(element);
+    }
+
+    public void test(){
     }
 
 }
