@@ -13,14 +13,17 @@ import utilities.WaitUtils;
 public class GoogleSteps {
     WaitUtils waitUtils;
     private final GooglePage googlePage;
-    private final TestDataReader testDataReader = new TestDataReader();
-    private final DataFactory dataFactory = new DataFactory();
-    PersonalData personalInfo = new PersonalData();
+    private final TestDataReader testDataReader;
+    private final DataFactory dataFactory;
+    private PersonalData personalInfo;
 
 
     public GoogleSteps() {
         googlePage = PageObjectManager.getGooglePage();
         waitUtils = PageObjectManager.getWaitUtils();
+        dataFactory = new DataFactory();
+        testDataReader = new TestDataReader();
+        personalInfo = new PersonalData();
     }
 
     @Given("^user goes to google website$")

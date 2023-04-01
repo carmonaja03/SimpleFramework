@@ -4,11 +4,12 @@ import groovyjarjarantlr4.v4.runtime.misc.NotNull;
 import lombok.experimental.UtilityClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 @UtilityClass
     public class DriverManager {
-
+    ChromeOptions options = new ChromeOptions();
      WebDriver driver = null;
     private static final String browser = getCurrentBrowser();
 
@@ -36,10 +37,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
     }
 
     public  void setBrowserDriver(String browser) {
-
+        options.addArguments("--remote-allow-origins=*");
         switch (browser){
             case "chrome":
-                driver = new ChromeDriver();
+                driver = new ChromeDriver(options);
                 break;
             case "firefox":
                 driver = new FirefoxDriver();
